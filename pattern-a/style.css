@@ -300,3 +300,24 @@ footer{border-top:1px solid var(--line);padding:44px 0 100px;}
   .wizard-wrap{grid-template-columns:1fr;}
   .job-summary-card{position:static;}
 }
+
+/* ===== why-card detail list + FAQ ===== */
+.why-card ul{list-style:none;padding:0;margin:14px 0 0;display:flex;flex-direction:column;gap:7px;}
+.why-card ul li{font-size:0.82rem;color:var(--ink-soft);display:flex;gap:8px;line-height:1.5;}
+.why-card ul li::before{content:"›";color:var(--accent);font-weight:700;flex:none;}
+
+.faq-list{display:flex;flex-direction:column;gap:14px;max-width:760px;}
+.faq-item{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-m);padding:18px 22px;}
+.faq-q{font-weight:700;font-size:0.92rem;display:flex;gap:10px;margin:0 0 8px;}
+.faq-q .qmark{color:var(--accent-strong);flex:none;font-family:"IBM Plex Mono";}
+.faq-a{font-size:0.86rem;color:var(--ink-soft);padding-left:26px;margin:0;line-height:1.7;}
+.faq-a .amark{color:var(--warm-strong,var(--accent-strong));font-family:"IBM Plex Mono";margin-right:8px;}
+
+.info-page h2{font-size:1.6rem;margin-bottom:8px;}
+.info-page .lead{color:var(--ink-soft);font-size:0.95rem;margin-bottom:36px;max-width:64ch;}
+.info-section{margin-bottom:36px;}
+.info-section h3{font-size:1.05rem;margin-bottom:12px;}
+.info-section p{font-size:0.92rem;color:var(--ink-soft);max-width:70ch;margin-bottom:10px;}
+.info-section ul{margin:0 0 10px;padding-left:20px;font-size:0.9rem;color:var(--ink-soft);}
+.info-section ul li{margin-bottom:6px;}
+.contact-form{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-l);padding:32px;max-width:600px;}
