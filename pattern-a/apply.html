@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>求人について相談する | eiyoushi.</title>
+<title>応募する | eiyoushi.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap">
@@ -23,20 +23,20 @@
 <main>
   <section>
     <div class="wrap" style="max-width:640px;">
-      <div class="breadcrumb"><a href="index.html">TOP</a> ＞ <a href="job.html">求人詳細</a> ＞ 求人について相談する</div>
+      <div class="breadcrumb"><a href="index.html">TOP</a> ＞ <a href="job.html">求人詳細</a> ＞ 応募する</div>
       <div class="section-head" style="display:block;">
-        <span class="kicker">FREE CONSULTATION</span>
-        <h2>無料でキャリア相談する</h2>
-        <p style="color:var(--ink-soft);font-size:0.9rem;margin-top:10px;">入力は1分程度です。専任のキャリアアドバイザー（栄養士資格保有者）が、ご希望条件を伺ったうえで折り返しご連絡します。</p>
+        <span class="kicker">APPLY</span>
+        <h2>応募する</h2>
+        <p style="color:var(--ink-soft);font-size:0.9rem;margin-top:10px;">入力は1分程度です。以下の内容を確認のうえ、応募企業へ送信します。</p>
       </div>
 
       <div class="apply-note">
-        このフォームを送信しても、その場で応募が確定するわけではありません。まずはご相談・ヒアリングからのスタートです。求人を紹介されたくない場合や、情報収集だけしたい場合もお気軽にご利用いただけます。
+        送信後、応募企業の採用担当者より3営業日以内にご連絡いたします。マイページから応募状況をいつでも確認できます。
       </div>
 
       <form class="apply-form" onsubmit="return false;">
         <div class="field" style="background:var(--accent-tint);padding:14px 16px;border-radius:var(--radius-s);margin-bottom:22px;">
-          <label style="margin-bottom:4px;">お問い合わせ求人</label>
+          <label style="margin-bottom:4px;">応募先求人</label>
           <div style="font-weight:700;">西新宿総合病院 栄養管理科 ／ 管理栄養士（常勤）</div>
         </div>
 
@@ -66,21 +66,23 @@
           </select>
         </div>
         <div class="field">
-          <label for="time">ご連絡希望時間帯</label>
-          <select id="time">
-            <option>指定なし</option>
-            <option>平日 10:00〜12:00</option>
-            <option>平日 13:00〜17:00</option>
-            <option>平日 17:00〜19:00</option>
-            <option>土日</option>
+          <label for="status">現在の就業状況</label>
+          <select id="status">
+            <option>選択してください</option>
+            <option>在職中</option>
+            <option>離職中</option>
           </select>
         </div>
         <div class="field">
-          <label for="note">ご質問・ご要望（任意）</label>
-          <textarea id="note" placeholder="現職の状況、転職時期のご希望などがあればご記入ください"></textarea>
+          <label for="resume">履歴書・職務経歴書（任意）</label>
+          <input id="resume" type="file" accept=".pdf,.doc,.docx">
+        </div>
+        <div class="field">
+          <label for="note">自己PR・ご質問（任意）</label>
+          <textarea id="note" placeholder="アピールポイントや、企業への質問があればご記入ください"></textarea>
         </div>
 
-        <button type="submit" class="btn btn-warm" style="width:100%;padding:16px;font-size:1rem;">この内容で相談する</button>
+        <button type="submit" class="btn btn-warm" style="width:100%;padding:16px;font-size:1rem;">この内容で応募する</button>
         <p style="font-size:0.76rem;color:var(--ink-soft);margin-top:14px;text-align:center;">送信内容は<a href="#" style="color:var(--accent-strong);">プライバシーポリシー</a>に基づき適切に管理します。</p>
       </form>
     </div>
