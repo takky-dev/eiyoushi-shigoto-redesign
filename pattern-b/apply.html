@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>求人について相談する | えいようしごと</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="header-row">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v6a3 3 0 0 0 6 0V3"/><path d="M11 9v12"/></svg></span>
+      <span><span class="brand-name">えいようしごと</span><span class="brand-tag">栄養士・管理栄養士専門の求人サイト</span></span>
+    </a>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap" style="max-width:640px;">
+      <div class="breadcrumb"><a href="index.html">TOP</a> ＞ <a href="job.html">求人詳細</a> ＞ 求人について相談する</div>
+      <div class="section-head" style="display:block;">
+        <span class="kicker">FREE CONSULTATION</span>
+        <h2>求人について話を聞いてみる</h2>
+        <p style="color:var(--ink-soft);font-size:0.9rem;margin-top:10px;font-family:'Zen Kaku Gothic New';">入力は1分程度です。専任のキャリアアドバイザー（栄養士資格保有者）が、ご希望条件を伺ったうえで折り返しご連絡します。</p>
+      </div>
+
+      <div class="apply-note">
+        このフォームを送信しても、その場で応募が確定するわけではありません。まずはご相談・ヒアリングからのスタートです。求人を紹介されたくない場合や、情報収集だけしたい場合もお気軽にご利用いただけます。
+      </div>
+
+      <form class="apply-form" onsubmit="return false;">
+        <div class="field" style="background:var(--accent-tint);padding:14px 16px;border-radius:var(--radius-s);margin-bottom:22px;">
+          <label style="margin-bottom:4px;">お問い合わせ求人</label>
+          <div style="font-weight:700;">西新宿総合病院 栄養管理科 ／ 管理栄養士（常勤）</div>
+        </div>
+
+        <div class="field">
+          <label for="name">お名前<span class="required">必須</span></label>
+          <input id="name" type="text" placeholder="例）栄養 花子" required>
+        </div>
+        <div class="field">
+          <label for="kana">フリガナ<span class="required">必須</span></label>
+          <input id="kana" type="text" placeholder="例）エイヨウ ハナコ" required>
+        </div>
+        <div class="field">
+          <label for="tel">電話番号<span class="required">必須</span></label>
+          <input id="tel" type="tel" placeholder="例）090-1234-5678" required>
+        </div>
+        <div class="field">
+          <label for="email">メールアドレス<span class="required">必須</span></label>
+          <input id="email" type="email" placeholder="例）hanako@example.com" required>
+        </div>
+        <div class="field">
+          <label for="qualification">お持ちの資格</label>
+          <select id="qualification">
+            <option>選択してください</option>
+            <option>管理栄養士</option>
+            <option>栄養士</option>
+            <option>資格取得見込み</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="time">ご連絡希望時間帯</label>
+          <select id="time">
+            <option>指定なし</option>
+            <option>平日 10:00〜12:00</option>
+            <option>平日 13:00〜17:00</option>
+            <option>平日 17:00〜19:00</option>
+            <option>土日</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="note">ご質問・ご要望（任意）</label>
+          <textarea id="note" placeholder="現職の状況、転職時期のご希望などがあればご記入ください"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-warm" style="width:100%;padding:16px;font-size:1rem;">この内容で相談する</button>
+        <p style="font-size:0.76rem;color:var(--ink-soft);margin-top:14px;text-align:center;font-family:'Zen Kaku Gothic New';">送信内容は<a href="#" style="color:var(--warm-strong);">プライバシーポリシー</a>に基づき適切に管理します。</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-bottom" style="border-top:1px solid var(--line);padding-top:20px;"><span>© 2026 えいようしごと</span><span>栄養士・管理栄養士専門の求人サイト</span></div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>求人一覧 | えいようしごと</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <input type="checkbox" id="navToggle" class="nav-toggle">
+  <div class="header-row">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v6a3 3 0 0 0 6 0V3"/><path d="M11 9v12"/></svg></span>
+      <span><span class="brand-name">えいようしごと</span><span class="brand-tag">栄養士・管理栄養士専門の求人サイト</span></span>
+    </a>
+    <nav class="primary">
+      <a href="list.html">求人を探す</a>
+      <a href="index.html#area">エリアから探す</a>
+      <a href="index.html#why">選ばれる理由</a>
+      <a href="#">会員登録（無料）</a>
+    </nav>
+    <div class="header-cta">
+      <a href="#" class="btn btn-line">ログイン</a>
+      <a href="#" class="btn btn-warm">無料で相談する</a>
+      <label for="navToggle" class="nav-burger" aria-label="メニューを開く"><span></span><span></span><span></span></label>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section style="padding-bottom:0;">
+    <div class="wrap">
+      <div class="breadcrumb"><a href="index.html">TOP</a> ＞ 求人一覧</div>
+      <div class="section-head"><div><span class="kicker">SEARCH</span><h2>求人を探す</h2></div></div>
+
+      <form class="filter-card" action="list.html" method="get">
+        <div class="filter-row">
+          <div class="field"><label for="kw">キーワード</label><input id="kw" type="text" placeholder="管理栄養士 / 保育園 / 献立作成 など"></div>
+          <div class="field"><label for="area">エリア</label><select id="area"><option>エリアを選ぶ</option><option>東京都</option><option>神奈川県</option><option>大阪府</option><option>愛知県</option><option>福岡県</option><option>北海道</option><option>埼玉県</option><option>千葉県</option></select></div>
+          <div class="field"><label for="emp">雇用形態</label><select id="emp"><option>指定なし</option><option>正社員</option><option>パート・アルバイト</option><option>契約社員</option></select></div>
+          <button class="search-btn" type="submit">検索する</button>
+        </div>
+
+        <div class="filter-group">
+          <div class="label">職種</div>
+          <div class="check-grid">
+            <label class="check-pill"><input type="checkbox">栄養士</label>
+            <label class="check-pill"><input type="checkbox" checked>管理栄養士</label>
+          </div>
+        </div>
+        <div class="filter-group">
+          <div class="label">施設種別</div>
+          <div class="check-grid">
+            <label class="check-pill"><input type="checkbox">病院・クリニック</label>
+            <label class="check-pill"><input type="checkbox">高齢者・介護施設</label>
+            <label class="check-pill"><input type="checkbox">保育園・幼稚園</label>
+            <label class="check-pill"><input type="checkbox">学校給食</label>
+            <label class="check-pill"><input type="checkbox">給食受託会社</label>
+            <label class="check-pill"><input type="checkbox">食品・ヘルスケア企業</label>
+          </div>
+        </div>
+        <div class="filter-group">
+          <div class="label">こだわり条件</div>
+          <div class="check-grid">
+            <label class="check-pill"><input type="checkbox">未経験OK</label>
+            <label class="check-pill"><input type="checkbox">寮・社宅あり</label>
+            <label class="check-pill"><input type="checkbox">管理栄養士歓迎</label>
+            <label class="check-pill"><input type="checkbox">資格取得支援あり</label>
+            <label class="check-pill"><input type="checkbox">駅徒歩5分以内</label>
+            <label class="check-pill"><input type="checkbox">扶養内勤務OK</label>
+          </div>
+        </div>
+      </form>
+
+      <div class="result-head">
+        <div class="result-count"><b>8,214</b>件中 1〜8件を表示</div>
+        <select class="sort-select"><option>おすすめ順</option><option>新着順</option><option>給与が高い順</option></select>
+      </div>
+
+      <div class="job-grid">
+        <div class="job-card">
+          <div class="job-top"><div><div class="job-facility">西新宿総合病院 栄養管理科</div><div class="job-title">管理栄養士（常勤）</div></div><div class="job-salary">月給26.5〜32万円</div></div>
+          <div class="badge-row"><span class="badge">管理栄養士歓迎</span><span class="badge warm">NST経験者優遇</span></div>
+          <div class="spec-list"><div><dt>勤務地</dt><span>東京都新宿区</span></div><div><dt>施設種別</dt><span>急性期病院</span></div><div><dt>雇用形態</dt><span>正社員</span></div><div><dt>休日</dt><span>週休2日・年間115日</span></div></div>
+          <div class="tag-row"><span class="tag">駅徒歩3分</span><span class="tag">寮相談可</span><span class="tag">臨床栄養管理</span></div>
+          <a href="job.html" class="job-cta">求人の詳細を見る →</a>
+        </div>
+        <div class="job-card">
+          <div class="job-top"><div><div class="job-facility">特別養護老人ホーム 陽だまりの丘</div><div class="job-title">栄養士（正社員）</div></div><div class="job-salary">月給21〜24万円</div></div>
+          <div class="badge-row"><span class="badge">未経験歓迎</span><span class="badge warm">資格取得支援あり</span></div>
+          <div class="spec-list"><div><dt>勤務地</dt><span>神奈川県横浜市</span></div><div><dt>施設種別</dt><span>特別養護老人ホーム</span></div><div><dt>雇用形態</dt><span>正社員</span></div><div><dt>休日</dt><span>シフト制・年間120日</span></div></div>
+          <div class="tag-row"><span class="tag">献立作成</span><span class="tag">大量調理</span><span class="tag">車通勤可</span></div>
+          <a href="job.html" class="job-cta">求人の詳細を見る →</a>
+        </div>
+        <div class="job-card">
+          <div class="job-top"><div><div class="job-facility">認可保育園 そらまめ保育園</div><div class="job-title">栄養士（パート可）</div></div><div class="job-salary">時給1,350円〜</div></div>
+          <div class="badge-row"><span class="badge">扶養内勤務OK</span><span class="badge warm">時短相談可</span></div>
+          <div class="spec-list"><div><dt>勤務地</dt><span>東京都杉並区</span></div><div><dt>施設種別</dt><span>認可保育園</span></div><div><dt>雇用形態</dt><span>パート・アルバイト</span></div><div><dt>休日</dt><span>週休2日・土日祝休み</span></div></div>
+          <div class="tag-row"><span class="tag">食育活動</span><span class="tag">残業ほぼなし</span><span class="tag">駅徒歩5分</span></div>
+          <a href="job.html" class="job-cta">求人の詳細を見る →</a>
+        </div>
+        <div class="job-card">
+          <div class="job-top"><div><div class="job-facility">株式会社フードクリエイト 給食事業部</div><div class="job-title">管理栄養士（契約社員）</div></div><div class="job-salary">月給24〜28万円</div></div>
+          <div class="badge-row"><span class="badge">管理栄養士歓迎</span><span class="badge warm">転勤なし</span></div>
+          <div class="spec-list"><div><dt>勤務地</dt><span>大阪府大阪市</span></div><div><dt>施設種別</dt><span>給食受託（事業所）</span></div><div><dt>雇用形態</dt><span>契約社員</span></div><div><dt>休日</dt><span>年間休日125日</span></div></div>
+          <div class="tag-row"><span class="tag">栄養指導</span><span class="tag">発注・在庫管理</span><span class="tag">昇給あり</span></div>
+          <a href="job.html" class="job-cta">求人の詳細を見る →</a>
+        </div>
+        <div class="job-card">
+          <div class="job-top"><div><div class="job-facility">医療法人社団ゆたか会 みなと中央病院</div><div class="job-title">栄養士（正社員）</div></div><div class="job-salary">月給22〜25万円</div></div>
+          <div class="badge-row"><span class="badge">未経験歓迎</span><span class="badge warm">寮あり</span></div>
+          <div class="spec-list"><div><dt>勤務地</dt><span>千葉県千葉市</span></div><div><dt>施設種別</dt><span>一般病院</span></div><div><dt>雇用形態</dt><span>正社員</span></div><div><dt>休日</dt><span>週休2日・年間120日</span></div></div>
+          <div class="tag-row"><span class="tag">NST補助</span><span class="tag">献立作成</span><span class="tag">寮費補助あり</span></div>
+          <a href="job.html" class="job-cta">求人の詳細を見る →</a>
+        </div>
+        <div class="job-card">
+          <div class="job-top"><div><div class="job-facility">介護老人保健施設 みずほの郷</div><div class="job-title">管理栄養士（正社員）</div></div><div class="job-salary">月給25〜29万円</div></div>
+          <div class="badge-row"><span class="badge">管理栄養士歓迎</span><span class="badge warm">退職金制度あり</span></div>
+          <div class="spec-list"><div><dt>勤務地</dt><span>埼玉県さいたま市</span></div><div><dt>施設種別</dt><span>介護老人保健施設</span></div><div><dt>雇用形態</dt><span>正社員</span></div><div><dt>休日</dt><span>シフト制・年間115日</span></div></div>
+          <div class="tag-row"><span class="tag">経管栄養管理</span><span class="tag">多職種連携</span><span class="tag">車通勤可</span></div>
+          <a href="job.html" class="job-cta">求人の詳細を見る →</a>
+        </div>
+        <div class="job-card">
+          <div class="job-top"><div><div class="job-facility">私立聖ヨハネ学園 給食センター</div><div class="job-title">栄養士（契約社員）</div></div><div class="job-salary">月給20〜23万円</div></div>
+          <div class="badge-row"><span class="badge">未経験歓迎</span><span class="badge warm">長期休暇あり</span></div>
+          <div class="spec-list"><div><dt>勤務地</dt><span>福岡県福岡市</span></div><div><dt>施設種別</dt><span>学校給食センター</span></div><div><dt>雇用形態</dt><span>契約社員</span></div><div><dt>休日</dt><span>土日祝休み・長期休暇あり</span></div></div>
+          <div class="tag-row"><span class="tag">学校給食</span><span class="tag">アレルギー対応</span><span class="tag">土日祝休み</span></div>
+          <a href="job.html" class="job-cta">求人の詳細を見る →</a>
+        </div>
+        <div class="job-card">
+          <div class="job-top"><div><div class="job-facility">株式会社グリーンテーブル 商品開発部</div><div class="job-title">管理栄養士（正社員）</div></div><div class="job-salary">月給26〜30万円</div></div>
+          <div class="badge-row"><span class="badge">管理栄養士必須</span><span class="badge warm">賞与年2回</span></div>
+          <div class="spec-list"><div><dt>勤務地</dt><span>愛知県名古屋市</span></div><div><dt>施設種別</dt><span>食品メーカー</span></div><div><dt>雇用形態</dt><span>正社員</span></div><div><dt>休日</dt><span>完全週休2日制</span></div></div>
+          <div class="tag-row"><span class="tag">商品開発</span><span class="tag">栄養成分表示</span><span class="tag">完全週休2日制</span></div>
+          <a href="job.html" class="job-cta">求人の詳細を見る →</a>
+        </div>
+      </div>
+
+      <nav class="pagination" aria-label="ページ送り">
+        <span class="current">1</span>
+        <a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a>
+        <a href="#">次へ ›</a>
+      </nav>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <div class="brand" style="margin-bottom:10px;"><span class="brand-mark" style="width:32px;height:32px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v6a3 3 0 0 0 6 0V3"/><path d="M11 9v12"/></svg></span><span class="brand-name" style="font-size:1.05rem;">えいようしごと</span></div>
+      <p style="font-size:0.82rem;color:var(--ink-soft);max-width:32ch;">栄養士・管理栄養士のための求人サイト。資格を、いちばん活きる現場へ。</p>
+    </div>
+    <div><h4>求人を探す</h4><ul><li><a href="list.html">病院・クリニック</a></li><li><a href="list.html">高齢者・介護施設</a></li><li><a href="list.html">保育園・幼稚園</a></li><li><a href="list.html">学校給食</a></li></ul></div>
+    <div><h4>サイトについて</h4><ul><li><a href="index.html">えいようしごととは</a></li><li><a href="#">栄養士お役立ちコラム</a></li><li><a href="#">運営会社</a></li><li><a href="#">お問い合わせ</a></li></ul></div>
+    <div><h4>会員向け</h4><ul><li><a href="#">会員登録</a></li><li><a href="#">ログイン</a></li><li><a href="#">利用規約</a></li><li><a href="#">プライバシーポリシー</a></li></ul></div>
+  </div>
+  <div class="wrap foot-bottom"><span>© 2026 えいようしごと</span><span>栄養士・管理栄養士専門の求人サイト</span></div>
+</footer>
+
+<div class="mobile-cta">
+  <a href="list.html" class="btn btn-line" style="flex:0.8;">求人を探す</a>
+  <a href="#" class="btn btn-warm">LINEで相談</a>
+</div>
+
+</body>
+</html>
