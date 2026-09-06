@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>掲載のお問い合わせ | eiyoushi.</title>
+<title>お仕事コラム | eiyoushi.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap">
@@ -34,51 +34,36 @@
 <main>
   <section>
     <div class="wrap info-page">
-      <div class="breadcrumb"><a href="index.html">TOP</a> ＞ 掲載のお問い合わせ</div>
-      <h2>求人掲載のお問い合わせ</h2>
-      <p class="lead">病院・介護施設・保育園・学校給食・食品メーカーなど、栄養士・管理栄養士・調理師を採用したい企業様は、以下フォームよりお気軽にお問い合わせください。担当者より折り返しご連絡いたします。</p>
+      <div class="breadcrumb"><a href="index.html">TOP</a> ＞ お仕事コラム</div>
+      <h2>お仕事コラム</h2>
+      <p class="lead">栄養士・管理栄養士の求人選び、給与の相場、転職の進め方まで。お仕事探しに役立つ情報をまとめています。</p>
 
-      <div class="why-grid" style="margin-bottom:40px;">
-        <div class="why-card">
-          <div class="why-num">01</div>
-          <h3>専門職に絞った掲載</h3>
-          <p>栄養士・管理栄養士・調理師の資格や経験を持つ求職者だけに求人を届けられます。</p>
-        </div>
-        <div class="why-card">
-          <div class="why-num">02</div>
-          <h3>直接応募だから早い</h3>
-          <p>会員登録不要の応募フォームのため、求職者が気軽に応募でき、母集団形成につながります。</p>
-        </div>
-        <div class="why-card">
-          <div class="why-num">03</div>
-          <h3>掲載前の内容確認</h3>
-          <p>掲載前に募集内容を確認するステップがあるため、求職者にも安心して見ていただけます。</p>
-        </div>
+      <div class="mag-grid">
+        <a href="column-salary.html" class="mag-card">
+          <div class="mag-thumb"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <div class="mag-body">
+            <span class="mag-cat">給与・待遇</span>
+            <div class="mag-title">管理栄養士と栄養士、給与はどう違う？施設別に解説</div>
+            <p class="mag-excerpt">同じ職場でも資格によって任される業務と給与レンジは変わります。病院・介護施設・保育園それぞれの相場を紹介します。</p>
+          </div>
+        </a>
+        <a href="column-career-change.html" class="mag-card">
+          <div class="mag-thumb"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h16M14 6l6 6-6 6"/></svg></div>
+          <div class="mag-body">
+            <span class="mag-cat">転職ノウハウ</span>
+            <div class="mag-title">未経験から病院栄養士に転職するには？必要な準備</div>
+            <p class="mag-excerpt">臨床栄養の実務経験がなくても応募できる病院求人はあります。求人選びのポイントと面接での伝え方をまとめました。</p>
+          </div>
+        </a>
+        <a href="column-timing.html" class="mag-card">
+          <div class="mag-thumb"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <div class="mag-body">
+            <span class="mag-cat">転職ノウハウ</span>
+            <div class="mag-title">栄養士の転職、動くならいつがいい？年間スケジュール</div>
+            <p class="mag-excerpt">養成校卒業や国家試験合格発表の時期と求人の動きには関係があります。転職を考え始めたら押さえておきたい時期の目安。</p>
+          </div>
+        </a>
       </div>
-
-      <form class="contact-form" onsubmit="return false;">
-        <div class="wizard-field">
-          <label for="cname">会社名<span class="required">必須</span></label>
-          <input id="cname" type="text" placeholder="例：株式会社〇〇">
-        </div>
-        <div class="wizard-field">
-          <label for="cperson">ご担当者名<span class="required">必須</span></label>
-          <input id="cperson" type="text" placeholder="例：採用 太郎">
-        </div>
-        <div class="wizard-field">
-          <label for="ctel">電話番号<span class="required">必須</span></label>
-          <input id="ctel" type="tel" placeholder="例：03-1234-5678">
-        </div>
-        <div class="wizard-field">
-          <label for="cemail">メールアドレス<span class="required">必須</span></label>
-          <input id="cemail" type="email" placeholder="例：saiyo@example.com">
-        </div>
-        <div class="wizard-field">
-          <label for="cmessage">ご相談内容</label>
-          <textarea id="cmessage" style="width:100%;border:1px solid var(--line);border-radius:var(--radius-s);padding:12px 14px;font-size:0.94rem;font-family:inherit;background:var(--bg);color:var(--ink);min-height:110px;" placeholder="募集職種、施設の種類、採用人数など、わかる範囲でご記入ください"></textarea>
-        </div>
-        <button type="submit" class="wizard-next" style="width:100%;">この内容で問い合わせる</button>
-      </form>
     </div>
   </section>
 </main>
