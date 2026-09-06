@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>求人一覧 | えいようしごと</title>
+<meta name="description" content="栄養士・管理栄養士の求人一覧。職種・施設種別・エリア・こだわり条件で絞り込んで、気になる求人にそのまま応募できます。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap">
@@ -35,7 +36,7 @@
   <section style="padding-bottom:0;">
     <div class="wrap">
       <div class="breadcrumb"><a href="index.html">TOP</a> ＞ 求人一覧</div>
-      <div class="section-head"><div><span class="kicker">SEARCH</span><h2>求人を探す</h2></div></div>
+      <div class="section-head"><div><span class="kicker">SEARCH</span><h1>求人を探す</h1></div></div>
 
       <form class="filter-card" action="list.html" method="get">
         <div class="filter-row">
@@ -76,9 +77,10 @@
         </div>
       </form>
 
+      <p class="listing-note">※施設名・条件は本デザイン案のための掲載例です。実際の求人ではありません。</p>
       <div class="result-head">
         <div class="result-count"><b>3,520</b>件中 1〜8件を表示</div>
-        <select class="sort-select"><option>おすすめ順</option><option>新着順</option><option>給与が高い順</option></select>
+        <label for="sortSelect" class="sr-only">並び替え</label><select id="sortSelect" class="sort-select"><option>おすすめ順</option><option>新着順</option><option>給与が高い順</option></select>
       </div>
 
       <div class="job-grid">
@@ -142,8 +144,8 @@
 
       <nav class="pagination" aria-label="ページ送り">
         <span class="current">1</span>
-        <a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a>
-        <a href="#">次へ ›</a>
+        <span class="page-inactive" aria-disabled="true">2</span><span class="page-inactive" aria-disabled="true">3</span><span class="page-inactive" aria-disabled="true">4</span><span class="page-inactive" aria-disabled="true">5</span>
+        <span class="page-inactive" aria-disabled="true">次へ ›</span>
       </nav>
     </div>
   </section>
