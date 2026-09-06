@@ -378,3 +378,35 @@ footer{border-top:1px solid var(--line);padding:44px 0 100px;}
 /* ===== job-card / rail-card photos ===== */
 .job-photo{aspect-ratio:16/9;border-radius:var(--radius-s);background-size:cover;background-position:center;}
 .rail-photo{aspect-ratio:16/9;border-radius:var(--radius-s);background-size:cover;background-position:center;}
+
+/* ===== Pattern B専用: 求人カードをリスト型（横並び）に作り変える ===== */
+.job-card{display:grid;grid-template-columns:136px 1fr;gap:6px 22px;padding:20px;border-radius:var(--radius-m);}
+.job-photo{grid-column:1;grid-row:1/-1;width:136px;aspect-ratio:1/1;border-radius:var(--radius-m);align-self:start;}
+.job-top{flex-wrap:wrap;}
+.spec-list{border-top:none;padding-top:2px;}
+.tag-row{margin-top:-2px;}
+.job-cta{background:var(--accent);color:#fff;padding:9px 18px;border-radius:999px;align-self:flex-start;margin-top:4px;}
+.job-cta:hover{background:var(--accent-strong);text-decoration:none;}
+@media (max-width:680px){
+  .job-card{grid-template-columns:1fr;}
+  .job-photo{grid-column:1;grid-row:auto;width:100%;aspect-ratio:16/9;}
+}
+
+/* rail-card も同じく横長リストの帯にする */
+.rail-scroll{flex-wrap:wrap;overflow-x:visible;}
+.rail-card{flex:1 1 100%;display:grid;grid-template-columns:96px 1fr;gap:4px 16px;padding:14px 16px;}
+.rail-photo{grid-column:1;grid-row:1/-1;width:96px;aspect-ratio:1/1;align-self:start;}
+.rail-badge{grid-column:2;}
+.rail-facility{grid-column:2;}
+.rail-title{grid-column:2;}
+.rail-meta{grid-column:2;}
+.rail-tags{grid-column:2;}
+
+/* カテゴリタイルも横長の帯に */
+.cat-grid{grid-template-columns:1fr;gap:10px;}
+.cat-card{display:grid;grid-template-columns:52px 1fr auto;align-items:center;gap:14px;text-align:left;padding:12px 16px;}
+.cat-icon{width:52px;height:52px;margin:0;}
+.cat-card .count{margin-top:0;}
+@media (min-width:860px){
+  .cat-grid{grid-template-columns:1fr 1fr;}
+}
