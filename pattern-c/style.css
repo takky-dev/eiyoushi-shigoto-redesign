@@ -45,7 +45,7 @@ header.site{position:sticky;top:0;z-index:50;background:color-mix(in srgb, var(-
 .brand-name{font-family:"Kaisei Decol",serif;font-size:1.28rem;line-height:1;color:var(--ink);}
 .brand-tag{font-size:0.68rem;color:var(--ink-soft);letter-spacing:.04em;margin-top:3px;display:block;}
 nav.primary{display:flex;align-items:center;gap:28px;}
-nav.primary a{font-size:0.92rem;font-weight:500;text-decoration:none;color:var(--ink-soft);}
+nav.primary a{font-size:0.92rem;font-weight:500;text-decoration:none;color:var(--ink-soft);white-space:nowrap;}
 nav.primary a:hover{color:var(--accent-strong);}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 22px;border-radius:999px;font-weight:700;font-size:0.9rem;text-decoration:none;border:1px solid transparent;cursor:pointer;white-space:nowrap;transition:transform .15s ease, box-shadow .15s ease, background .15s ease;}
 .btn:focus-visible{outline:3px solid var(--accent-strong);outline-offset:2px;}
@@ -161,18 +161,23 @@ footer{border-top:1px solid var(--line);padding:44px 0 100px;}
   .why-grid{grid-template-columns:1fr;gap:32px;}
   .foot-grid{grid-template-columns:1fr 1fr;}
 }
-@media (max-width:720px){
+@media (max-width:1040px){
   nav.primary{position:fixed;top:0;right:0;height:100%;width:min(78vw,320px);background:var(--surface);border-left:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:2px;padding:80px 24px 24px;transform:translateX(100%);transition:transform .25s ease;z-index:40;}
-  nav.primary a{padding:12px 0;width:100%;border-bottom:1px solid var(--line);}
+  nav.primary a{padding:12px 0;width:100%;border-bottom:1px solid var(--line);white-space:normal;}
   .nav-toggle:checked ~ .header-row nav.primary{transform:translateX(0);}
   .nav-burger{display:flex;}
+}
+@media (max-width:720px){
   .header-cta .btn-line{display:none;}
   .hero h1{font-size:1.9rem;}
   .hero p.lead{max-width:none;}
   .search-row{grid-template-columns:1fr;}
   .search-btn{height:46px;width:100%;}
-  .stat-strip{flex-wrap:wrap;gap:14px 0;}
-  .stat-strip div{flex:1 1 45%;border-left:none;padding-left:0;margin-top:10px;}
+  .stat-strip{flex-wrap:nowrap;}
+  .stat-strip div{flex:1 1 0;min-width:0;padding:0 6px;}
+  .stat-strip div:first-child{padding-left:0;}
+  .stat-num{font-size:1.1rem;}
+  .stat-label{font-size:0.62rem;}
   .cat-grid{grid-template-columns:repeat(2,1fr);}
   .section-head{align-items:flex-start;}
   .cta-band{padding:30px 22px;flex-direction:column;align-items:flex-start;}
