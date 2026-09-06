@@ -371,3 +371,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 100px;}
 .col-table th{color:var(--ink-soft);font-weight:700;width:40%;background:var(--surface-alt);}
 .col-cta{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-m);padding:22px 26px;margin-top:36px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;}
 .col-cta p{margin:0;font-size:0.9rem;color:var(--ink-soft);}
+
+/* ===== job-card / rail-card photos ===== */
+.job-photo{aspect-ratio:16/9;border-radius:var(--radius-s);background-size:cover;background-position:center;}
+.rail-photo{aspect-ratio:16/9;border-radius:var(--radius-s);background-size:cover;background-position:center;}
