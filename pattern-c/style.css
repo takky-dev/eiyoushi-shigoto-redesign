@@ -160,6 +160,10 @@ footer{border-top:1px solid var(--line);padding:44px 0 100px;}
   .job-grid{grid-template-columns:1fr;}
   .why-grid{grid-template-columns:1fr;gap:32px;}
   .foot-grid{grid-template-columns:1fr 1fr;}
+  /* 縦積みになると写真が横幅いっぱいに拡大し、絶対配置のfact-tagが人物の顔と重なるため、
+     写真の下に並べる通常のブロックに変更する */
+  .photo-wrap{padding-bottom:0;}
+  .fact-tag{position:static;margin-top:16px;width:auto;max-width:280px;transform:none;box-shadow:4px 4px 0 var(--warm);}
 }
 @media (max-width:1040px){
   nav.primary{position:fixed;top:0;right:0;height:100%;width:min(78vw,320px);background:var(--surface);border-left:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:2px;padding:80px 24px 24px;transform:translateX(100%);transition:transform .25s ease;z-index:40;}
